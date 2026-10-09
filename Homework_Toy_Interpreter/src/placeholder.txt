@@ -1,0 +1,88 @@
+ExeStack:
+CompoundStatement[first=VariableDeclarationStatement[type=INTEGER, variableName=a], second=CompoundStatement[first=VariableDeclarationStatement[type=INTEGER, variableName=b], second=CompoundStatement[first=AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]], second=CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]]]]
+SymTable:
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+VariableDeclarationStatement[type=INTEGER, variableName=a]
+CompoundStatement[first=VariableDeclarationStatement[type=INTEGER, variableName=b], second=CompoundStatement[first=AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]], second=CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]]]
+SymTable:
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+CompoundStatement[first=VariableDeclarationStatement[type=INTEGER, variableName=b], second=CompoundStatement[first=AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]], second=CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]]]
+SymTable:
+a --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+VariableDeclarationStatement[type=INTEGER, variableName=b]
+CompoundStatement[first=AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]], second=CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]]
+SymTable:
+a --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+CompoundStatement[first=AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]], second=CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]]
+SymTable:
+a --> 0
+b --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+AssignmentStatement[variableName=a, expression=ArithmeticExpression[leftOperand=ValueExpression[value=2], rightOperand=ArithmeticExpression[leftOperand=ValueExpression[value=3], rightOperand=ValueExpression[value=5], operator=*], operator=+]]
+CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]
+SymTable:
+a --> 0
+b --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+CompoundStatement[first=AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]], second=PrintStatement[expression=VariableExpression[variableName=b]]]
+SymTable:
+a --> 17
+b --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+AssignmentStatement[variableName=b, expression=ArithmeticExpression[leftOperand=VariableExpression[variableName=a], rightOperand=ValueExpression[value=1], operator=+]]
+PrintStatement[expression=VariableExpression[variableName=b]]
+SymTable:
+a --> 17
+b --> 0
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+PrintStatement[expression=VariableExpression[variableName=b]]
+SymTable:
+a --> 17
+b --> 18
+Out:
+FileTable:
+----------------------------------------
+
+ExeStack:
+SymTable:
+a --> 17
+b --> 18
+Out:
+18
+FileTable:
+----------------------------------------
+

@@ -1,0 +1,199 @@
+ExeStack:
+[(int a; (int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))))]
+SymTable:
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))), int a]
+SymTable:
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b))))]
+SymTable:
+a --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b))), int b]
+SymTable:
+a --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))]
+SymTable:
+a --> 0
+b --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(b = ((a - (4 / 2)) + 7); Print(b)), a = (2 + (3 * 5))]
+SymTable:
+a --> 0
+b --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(b = ((a - (4 / 2)) + 7); Print(b))]
+SymTable:
+a --> 17
+b --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[Print(b), b = ((a - (4 / 2)) + 7)]
+SymTable:
+a --> 17
+b --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[Print(b)]
+SymTable:
+a --> 17
+b --> 22
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[]
+SymTable:
+a --> 17
+b --> 22
+Out:
+[22]
+FileTable:
+FileTable not available in PrgState
+
+PrgState{
+ exeStack=[(int a; (int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))))],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))), int a],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(int b; (a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b))))],
+ symTable={a=0},
+ out=[]
+}
+PrgState{
+ exeStack=[(a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b))), int b],
+ symTable={a=0},
+ out=[]
+}
+PrgState{
+ exeStack=[(a = (2 + (3 * 5)); (b = ((a - (4 / 2)) + 7); Print(b)))],
+ symTable={a=0, b=0},
+ out=[]
+}
+PrgState{
+ exeStack=[(b = ((a - (4 / 2)) + 7); Print(b)), a = (2 + (3 * 5))],
+ symTable={a=0, b=0},
+ out=[]
+}
+PrgState{
+ exeStack=[(b = ((a - (4 / 2)) + 7); Print(b))],
+ symTable={a=17, b=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(b), b = ((a - (4 / 2)) + 7)],
+ symTable={a=17, b=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(b)],
+ symTable={a=17, b=22},
+ out=[]
+}
+PrgState{
+ exeStack=[],
+ symTable={a=17, b=22},
+ out=[22]
+}
+PrgState{
+ exeStack=[(bool a; (int v; (a = false; ((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v)))))],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(int v; (a = false; ((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v)))), bool a],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(int v; (a = false; ((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v))))],
+ symTable={a=false},
+ out=[]
+}
+PrgState{
+ exeStack=[(a = false; ((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v))), int v],
+ symTable={a=false},
+ out=[]
+}
+PrgState{
+ exeStack=[(a = false; ((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v)))],
+ symTable={a=false, v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v)), a = false],
+ symTable={a=false, v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[((IF(a) THEN(v = 2) ELSE(v = 3)); Print(v))],
+ symTable={a=false, v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(v), (IF(a) THEN(v = 2) ELSE(v = 3))],
+ symTable={a=false, v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(v), v = 3],
+ symTable={a=false, v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(v)],
+ symTable={a=false, v=3},
+ out=[]
+}
+PrgState{
+ exeStack=[],
+ symTable={a=false, v=3},
+ out=[3]
+}

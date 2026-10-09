@@ -1,0 +1,15 @@
+<Label text="LockTable" />
+                <TableView fx:id="lockTable" prefHeight="100">
+                    <columns>
+                        <TableColumn fx:id="lockLocCol" text="Location" />
+                        <TableColumn fx:id="lockValCol" text="Value" />
+                    </columns>
+                </TableView>
+                <Label text="SemaphoreTable" />
+                <TableView fx:id="semaphoreTable" prefHeight="100">
+                    <columns>
+                        <TableColumn fx:id="semIndexCol" text="Index" />
+                        <TableColumn fx:id="semValCol" text="Value" />
+                        <TableColumn fx:id="semListCol" text="List" />
+                    </columns>
+                </TableView>

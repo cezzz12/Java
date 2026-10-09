@@ -1,0 +1,52 @@
+ExeStack:
+[(int v; (v = 2; Print(v)))]
+SymTable:
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(v = 2; Print(v)), int v]
+SymTable:
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[(v = 2; Print(v))]
+SymTable:
+v --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[Print(v), v = 2]
+SymTable:
+v --> 0
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[Print(v)]
+SymTable:
+v --> 2
+Out:
+[]
+FileTable:
+FileTable not available in PrgState
+
+ExeStack:
+[]
+SymTable:
+v --> 2
+Out:
+[2]
+FileTable:
+FileTable not available in PrgState
+

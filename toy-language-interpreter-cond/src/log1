@@ -1,0 +1,30 @@
+PrgState{
+ exeStack=[(int v; (v = 2; Print(v)))],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(v = 2; Print(v)), int v],
+ symTable={},
+ out=[]
+}
+PrgState{
+ exeStack=[(v = 2; Print(v))],
+ symTable={v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(v), v = 2],
+ symTable={v=0},
+ out=[]
+}
+PrgState{
+ exeStack=[Print(v)],
+ symTable={v=2},
+ out=[]
+}
+PrgState{
+ exeStack=[],
+ symTable={v=2},
+ out=[2]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="GUI.ProgramSelectorController">
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Label text="Select a program to run"/>
+            <ListView fx:id="programsList" prefHeight="300" />
+            <HBox spacing="10">
+                <Button text="Open Program" onAction="#handleOpen" />
+                <Button text="Exit" onAction="#handleExit" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
